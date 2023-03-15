@@ -8,7 +8,7 @@ namespace OOPS_BasedProblems
         {
             Console.WriteLine("OOPS_Concepts");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Exit ");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Abstraction ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -36,6 +36,11 @@ namespace OOPS_BasedProblems
                     Console.WriteLine(" Length=" + rectangle.l);
                     Console.WriteLine(" Breadth=" + rectangle.b);
                     Console.WriteLine("  Area =" + rectangle.AreaOfRectangle());
+                    break;
+                    case 6: Console.WriteLine("Abstaction");
+                    Cat cat = new Cat();    
+                    cat.AnimalSound();
+                    cat.Eat();
                     break;
 
 
