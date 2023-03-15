@@ -8,7 +8,7 @@ namespace OOPS_BasedProblems
         {
             Console.WriteLine("OOPS_Concepts");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5 Exit ");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -29,6 +29,15 @@ namespace OOPS_BasedProblems
                     Dog dog = new Dog();
                     dog.AnimalEat();
                     break;
+                    case 5: Console.WriteLine("Encapsulation");
+                    Encapsulation rectangle = new Encapsulation();
+                    rectangle.l = 15;
+                    rectangle.b = 10;
+                    Console.WriteLine(" Length=" + rectangle.l);
+                    Console.WriteLine(" Breadth=" + rectangle.b);
+                    Console.WriteLine("  Area =" + rectangle.AreaOfRectangle());
+                    break;
+
 
             }
 
