@@ -7,6 +7,8 @@ namespace OOPS_BasedProblems
         static void Main(string[] args)
         {
             Console.WriteLine("OOPS_Concepts");
+            ClassAndObjects objects = new ClassAndObjects();
+            objects.CreateClassAndObject();
         }
     }
 }
