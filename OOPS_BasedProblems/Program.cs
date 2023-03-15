@@ -8,7 +8,7 @@ namespace OOPS_BasedProblems
         {
             Console.WriteLine("OOPS_Concepts");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4. Exit ");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5 Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -24,6 +24,10 @@ namespace OOPS_BasedProblems
                     case 3: Console.WriteLine("Polymorphism - Method Overloding");
                     Console.WriteLine( "Addition :"+OverlodingPoly.add(6, 6));
                     Console.WriteLine("Addition : "+OverlodingPoly.add(7, 8, 67));
+                    break;
+                    case 4: Console.WriteLine("Method Overriding");
+                    Dog dog = new Dog();
+                    dog.AnimalEat();
                     break;
 
             }
