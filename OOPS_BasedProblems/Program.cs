@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Mail;
 
 namespace OOPS_BasedProblems
 {
@@ -8,7 +9,7 @@ namespace OOPS_BasedProblems
         {
             Console.WriteLine("OOPS_Concepts");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Abstraction \n7.Variables");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Abstraction \n7.Variables\n8.Types Of Methods");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -57,6 +58,14 @@ namespace OOPS_BasedProblems
                     variables1.EmployeeId = 2;
                     Console.WriteLine("Employee Name= " + variables1.EmployeeName + " \nEmployee ID; " + variables1.EmployeeId);
                     break;
+                    case 8: Console.WriteLine("Types of Methods");
+                    TypesOfMethods.CreateStaticMethod();//Static Method
+                    TypesOfMethods type=new TypesOfMethods();
+                    type.CreateInstanceMethod();//InstanceMethod
+                    type.CreateVirtualMethod();//Will print only parent class method
+                    Demo demo = new Demo();
+                    demo.CreateVirtualMethod();//Virtual Method
+                     break;
 
 
             }
