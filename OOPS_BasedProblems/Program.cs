@@ -9,7 +9,7 @@ namespace OOPS_BasedProblems
         {
             Console.WriteLine("OOPS_Concepts");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Abstraction \n7.Variables\n8.Types Of Methods\n9.Value Type \n10.Reference Type\n11.Types Of Inheritance");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Abstraction \n7.Variables\n8.Types Of Methods\n9.Value Type \n10.Reference Type\n11.Types Of Inheritance \n 12.Constructor\n13.Interface");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -88,7 +88,20 @@ namespace OOPS_BasedProblems
                     tester.programming();
                     tester.Testing();
                     break;
-                    
+                case 12:
+                    Console.WriteLine("Constructor");
+                    Constructor constructor = new Constructor();//Prameterless
+                    Console.WriteLine("Default value of a : " + constructor.a);//defualt
+                    Constructor2 constructor2 = new Constructor2(102 , "Rutuja");//Parameterized
+                    constructor2.Display();
+                    break;
+                    case 13:
+                    Console.WriteLine("Interface !!!");
+                    Rectangle rectangle1= new Rectangle();
+                    rectangle1.Draw();
+                    Circle circle = new Circle();
+                    circle.Draw();
+                    break;
             }
 
 
