@@ -66,8 +66,17 @@ namespace OOPS_BasedProblems
                     Demo demo = new Demo();
                     demo.CreateVirtualMethod();//Virtual Method
                      break;
-
-
+                case 9:
+                    Console.WriteLine("Value type ");
+                     ValueType.TestValueType();
+                    ValueType.ChangeValueType(5);
+                    break;
+                case 10:
+                    Console.WriteLine(" Reference Type");
+                    ReferenceType.TestRefType();
+                   // ReferenceType.ChangeRefType();
+                    break;
+                    
             }
 
 
