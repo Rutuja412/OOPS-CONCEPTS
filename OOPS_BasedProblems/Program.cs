@@ -9,7 +9,7 @@ namespace OOPS_BasedProblems
         {
             Console.WriteLine("OOPS_Concepts");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Abstraction \n7.Variables\n8.Types Of Methods");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5. Encapsulation \n6.Abstraction \n7.Variables\n8.Types Of Methods\n9.Value Type \n10.Reference Type\n11.Types Of Inheritance");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -75,6 +75,18 @@ namespace OOPS_BasedProblems
                     Console.WriteLine(" Reference Type");
                     ReferenceType.TestRefType();
                    // ReferenceType.ChangeRefType();
+                    break;
+                    case 11:
+                    Console.WriteLine("Types of Inheritance");
+                    Console.WriteLine("Single Inheritance");
+                    //SingleInheritance singleInheritance= new SingleInheritance();
+                   // singleInheritance.ShowSingleInheritance();
+                    C c =new C();
+                    c.RecieveGreeting();//Hierarical
+                    Tester tester = new Tester();
+                    tester.Function();
+                    tester.programming();
+                    tester.Testing();
                     break;
                     
             }
